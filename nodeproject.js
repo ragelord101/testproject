@@ -9,6 +9,7 @@ app.set('view engine', 'ejs');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static('public'));
 
 var alphabet = 'abcdefghijklmnopqrstuvwxyz';
 var newalpha = '';
@@ -44,7 +45,7 @@ function decode(message) {
 }
 
 app.get('/', (req, res) => {
-    res.send('Hello World! welcome to our first publicly uploaded server')
+    res.render('startnav')
 })
 
 app.get('/about', (req, res) => {
