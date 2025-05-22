@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cypher decryption</title>
+</head>
+<body>
+    <form action="/decrypt" method="post">
+        <label for="inputtext">Please type the words you'd like to decrypt</label>
+        <br>
+        <input type="text" id="inputtext" name="inputtext" required>
+        <br>
+        <label for="key">Please type the key you'd like to use</label>
+        <br>
+        <input type="number" id="key" name="key" required>
+        <br>
+        <button type="submit">decrypt</button>
+    </form>
+    <% if (typeof decryptedText !== 'undefined') { %>
+        <h2>Decrypted Text:</h2>
+        <p><%= decryptedText %></p>
+    <% } %>
+</body>
