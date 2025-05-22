@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 4000;
+const port = process.env.PORT || 4000;
 const path = require('path');
 
 
@@ -81,6 +81,6 @@ app.post('/decrypt', (req, res) => {
 
 app.listen(
     port,
-    () => console.log(`Its alive on http://localhost:${port}/`)
+    () => console.log(`system is now operational`)
 )
 
