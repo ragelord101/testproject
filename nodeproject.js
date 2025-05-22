@@ -16,3 +16,8 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about')
 })
+
+app.listen(
+    port,
+    () => console.log(`Its alive on http://localhost:${port}/`)
+)
