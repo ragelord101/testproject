@@ -1,0 +1,1 @@
+be sure to install all the dependencies in the package file before attempting to run this program. for the sake of storage space those have been excluded from this repository since they should be easy to install when needed
